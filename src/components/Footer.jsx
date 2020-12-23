@@ -38,4 +38,9 @@ const Foot = styled.div`
 const Img = styled(IMG)`
     max-height: 4vh;
     margin: 2vh;
+
+    transition: 0.2s;
+    :hover {
+        transform: rotate(360deg);
+    }
 `;

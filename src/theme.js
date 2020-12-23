@@ -72,7 +72,7 @@ export const Container = styled.div`
 // For the home page
 export const H1 = styled.h1`
     font-family: 'Tw Cen MT';
-    font-size: 5rem;
+    font-size: 7rem;
     text-transform: uppercase;
 `;
 

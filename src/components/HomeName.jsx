@@ -7,7 +7,7 @@ class HomeName extends React.Component {
         return (
             // TODO link to about me
             <Clickable href="/about">
-                <Container border="true">
+                <Container>
                     <Name>Asaf Kedem</Name>
                     <Subtitle>This is my website!</Subtitle>
                 </Container>

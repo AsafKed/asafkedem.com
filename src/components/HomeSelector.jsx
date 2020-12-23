@@ -1,6 +1,7 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Container, H3, IMG } from '../theme';
-import man from '../media/man.png'
+import man from '../media/man.png';
 
 class HomeSelector extends React.Component {
     constructor(props) {
@@ -32,7 +33,7 @@ class HomeSelector extends React.Component {
 export default HomeSelector;
 
 const Opened =
-    <Container align="right" justify="top">
+    <Container align="right">
         <H3 href="projects">Projects</H3>
         <H3 href="skills">Skills</H3>
         {/* TODO fix this later, it's very hacky */}
@@ -40,7 +41,16 @@ const Opened =
         <H3 href="blog">Entrepreneurial Blog</H3>
     </Container>
 
+        
+const Man = styled(IMG)`
+    scale: 0.4;
+    transition: scale 0.5s;
+    :hover {
+        scale: 0.6;
+    }
+`;
+
 const UnOpened =
     <Container>
-        <IMG src={man} alt="businessman" />
+        <Man src={man} alt="businessman" />
     </Container>
