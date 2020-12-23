@@ -8,24 +8,6 @@ export const theme = {
     faded: '#E7E4E4'
 };
 
-// TODO fix awkward white space with smaller screen
-export const Application = styled.div`
-    /* Set background */
-    background: ${theme.bg};
-    height: 100vh;
-
-    /* Set centering */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-
-
-    /* Font size (set up for rem usage) */
-    font-size: 62.5%;
-    /* So that 1rem = 10px */
-`;
-
 /**
  * Use as wrapper div for components
  */
@@ -36,6 +18,18 @@ export const Wrapper = styled.div`
     align-items: center;
     flex-wrap: wrap;
 `;
+
+// TODO fix awkward white space with smaller screen
+// Inherit Wrapper's style
+export const Application = styled(Wrapper)`
+    /* Set background */
+    background: ${theme.bg};
+    height: 100vh;
+
+    /* Font size (set up for rem usage) so that 1rem = 10px */
+    font-size: 62.5%;
+`;
+
 
 // TODO design different sizes in Figma
 // TODO enable different centering options (middle, left, right)
@@ -56,18 +50,18 @@ export const Container = styled.div`
 
 
     justify-content: ${props => {
-        if (props.justify == "top") return `top`;
-        else if (props.justify == "bottom") return `bottom`;
+        if (props.justify === "top") return `top`;
+        else if (props.justify === "bottom") return `bottom`;
         else return `center`;
     }};
 
  
     /* Choose inner spacing */
     align-items: ${props => {
-        if (props.align == "left") {
+        if (props.align === "left") {
             return `flex-start`;
         }
-        else if (props.align == "right") {
+        else if (props.align === "right") {
             return `flex-end`;
         }
         else {

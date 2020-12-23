@@ -31,18 +31,13 @@ class HomeSelector extends React.Component {
 }
 export default HomeSelector;
 
-// Keep to reuse later
-// Use the Container's style, but add the opened option
-// const Hoverable = styled(Container)`
-//     background-color: red;
-// `;
-
 const Opened =
     <Container align="right" justify="top">
         <H3 href="projects">Projects</H3>
         <H3 href="skills">Skills</H3>
+        {/* TODO fix this later, it's very hacky */}
         <H3 href="">Bring back the man!</H3>
-        <H3 href="/blog">Entrepreneurial Blog</H3>
+        <H3 href="blog">Entrepreneurial Blog</H3>
     </Container>
 
 const UnOpened =
