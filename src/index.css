@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+  /* Custom fonts */
+  @font-face {
+    font-family: 'Tw Cen MT';
+    src: url(./fonts/Tw/TCCM____.TTF) format('truetype');
+    font-style: normal; 
+  }
+  
+  @font-face {
+    font-family: 'Mainframe';
+    src: url(./fonts/Mainframe/mainframe-opto.ttf) format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Sanchez';
+    src: url(./fonts/Sanchez/Sanchezregular.otf) format('truetype');
+  }
