@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, H1, H5 } from '../Style';
+import { Container, H1, H5 } from '../theme';
 
 class HomeName extends React.Component {
     render() {
@@ -12,3 +12,4 @@ class HomeName extends React.Component {
     };
 }
 export default HomeName;
+

@@ -1,6 +1,6 @@
 import { ThemeProvider } from 'styled-components';
-import { Application, theme } from './Style'
-import Home from './pages/Home'
+import { Application, theme } from './theme'
+import Home from './pages/Home.jsx'
 
 
 

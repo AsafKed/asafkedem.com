@@ -1,7 +1,7 @@
 import React from 'react';
-import { Wrapper, Container, H1, H5} from '../Style';
-import HomeName from '../components/HomeName';
-import HomeSelector from '../components/HomeSelector';
+import { Wrapper, Container, H1, H5} from '../theme';
+import HomeName from '../components/HomeName.jsx';
+import HomeSelector from '../components/HomeSelector.jsx';
 
 class Home extends React.Component {
     render() {
