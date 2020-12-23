@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-
 export const theme = {
     bg: '#F2EEEE',
     primary: '#16262E',
@@ -24,7 +23,7 @@ export const Wrapper = styled.div`
 export const Application = styled(Wrapper)`
     /* Set background */
     background: ${theme.bg};
-    height: 100vh;
+    height: 92vh;
 
     /* Font size (set up for rem usage) so that 1rem = 10px */
     font-size: 62.5%;
@@ -70,7 +69,7 @@ export const Container = styled.div`
     }};
 `;
 
-// For the main name
+// For the home page
 export const H1 = styled.h1`
     font-family: 'Tw Cen MT';
     font-size: 5rem;
@@ -104,6 +103,7 @@ export const IMG = styled.img`
     cursor: pointer;
 `;
 
+// To make surround a container and make it clickable
 export const Clickable = styled.a`
     text-decoration: none;
 `;
