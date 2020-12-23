@@ -103,3 +103,7 @@ export const H5 = styled.h5`
 export const IMG = styled.img`
     cursor: pointer;
 `;
+
+export const Clickable = styled.a`
+    text-decoration: none;
+`;
