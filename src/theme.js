@@ -106,3 +106,6 @@ export const H5 = styled.h5`
     color: #000;
 `;
 
+export const IMG = styled.img`
+    cursor: pointer;
+`;

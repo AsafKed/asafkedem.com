@@ -1,23 +1,30 @@
 import React from 'react';
-import { Container, H3, Wrapper } from '../theme';
+import { Container, H3, IMG } from '../theme';
 import man from '../media/man.png'
 
 class HomeSelector extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            opened: false
+            opened: false,
+            keepOpen: true
         };
+        this.toggleOpened=this.toggleOpened.bind(this);
+    }
+
+    toggleOpened() {
+        if (this.keepOpen)
+        this.setState({opened: !this.state.opened});
     }
 
     render() {
         var element = UnOpened;
         if (this.state.opened) element = Opened;
-        else element=UnOpened;
+        else element = UnOpened;
 
         return (
-            <div onMouseDown={() => this.setState({opened: true})}>
-                { element }
+            <div onMouseDown={() => this.setState({opened: true, keepOpen: false})}>
+                { element}
             </div>
         );
     };
@@ -30,14 +37,15 @@ export default HomeSelector;
 //     background-color: red;
 // `;
 
-const Opened = 
+const Opened =
     <Container align="right" justify="top">
         <H3 href="projects">Projects</H3>
         <H3 href="skills">Skills</H3>
-        <H3 href="blog">Entrepreneurial Blog</H3>
+        <H3 href="">Bring back the man!</H3>
+        <H3 href="/blog">Entrepreneurial Blog</H3>
     </Container>
 
-const UnOpened = 
+const UnOpened =
     <Container>
-        <img src={man} alt="businessman"/>
+        <IMG src={man} alt="businessman" />
     </Container>
