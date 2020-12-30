@@ -7,6 +7,15 @@ export const theme = {
     faded: '#E7E4E4'
 };
 
+export const themeSubPages = {
+    bg: '#21161F',
+    h1: '#32DE8A',
+    primary: '#32DE8A',
+    secondary: '#5DFF11',
+    primaryup: '#703EC3',
+    faded: '#C4C4C4'
+}
+
 /**
  * Use as wrapper div for components
  */
