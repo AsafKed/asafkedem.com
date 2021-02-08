@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme, Clickable, Container, H1, H5 } from '../theme';
+import { theme, Clickable, Container, H1, MainSubtitle } from '../theme';
 
 class HomeName extends React.Component {
     render() {
@@ -26,6 +26,6 @@ const Name = styled(H1)`
     color: ${theme.primary};
 `;
 
-const Subtitle = styled(H5)`
+const Subtitle = styled(MainSubtitle)`
     margin: 0px;
 `;

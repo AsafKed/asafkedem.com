@@ -1,0 +1,5 @@
+const myText = 
+"I’m a product of my environments. I was raised multiculturally and have been lucky to meet people from many origins. This background and constant curiosity lead me to enjoy studying how we all got to where we are today—the results of that study act as a guide to creating the future. Currently, for me, this involves the study of: language, history, religion, philosophy, psychology and business. I constantly challenge myself by working to improve my habits, knowledge, and abilities. If we have the good fortune of meeting, strike up a conversation about any of these topics to get me exhilarated!\n\n\
+This constant learning and expanding on knowledge allows me greater perception and confidence in myself. I use it to help those around me. Growing up, I’d volunteer to help or teach the local community. Although, my favorite student and teacher has always been my grandfather. Nowadays, I’m using my unique lens to tackle problems on a slightly higher level: the Dutch housing system. If you’re interested in my journey and learnings on that front, check out my entrepreneurial blog."
+
+export default myText;

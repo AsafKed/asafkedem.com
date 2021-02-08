@@ -1,17 +1,29 @@
 import React from 'react';
-import { Wrapper, Container, H1, H5} from '../theme';
+import styled, { ThemeProvider } from 'styled-components';
+import { Application, Page, theme } from '../theme'
+
 import HomeName from '../components/HomeName.jsx';
 import HomeSelector from '../components/HomeSelector.jsx';
+import Footer from '../components/Footer.jsx'
 
 class Home extends React.Component {
     render() {
         return (
-            <Wrapper>
-                <HomeName/>
-                <HomeSelector/>
-            </Wrapper>
+            <ThemeProvider theme={theme}>
+                <AppContainer>
+                    <Page>
+                        <HomeName />
+                        <HomeSelector />
+                    </Page>
+                    <Footer />
+                </AppContainer>
+            </ThemeProvider>
         );
     }
 }
 
 export default Home;
+
+const AppContainer = styled.div`
+  height: 100%;
+`;

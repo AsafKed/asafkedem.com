@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, H3, IMG } from '../theme';
+import { Container, VSelector, IMG } from '../theme';
 import man from '../media/man.png';
 
 class HomeSelector extends React.Component {
@@ -34,11 +34,11 @@ export default HomeSelector;
 
 const Opened =
     <Container align="right">
-        <H3 href="projects">Projects</H3>
-        <H3 href="skills">Skills</H3>
+        <VSelector href="projects">Projects</VSelector>
+        <VSelector href="skills">Skills</VSelector>
         {/* TODO fix this later, it's very hacky */}
-        <H3 href="">Bring back the man!</H3>
-        <H3 href="blog">Entrepreneurial Blog</H3>
+        <VSelector href="">Bring back the man!</VSelector>
+        <VSelector href="blog">Entrepreneurial Blog</VSelector>
     </Container>
 
         
