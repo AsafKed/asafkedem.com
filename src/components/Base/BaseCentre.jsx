@@ -5,7 +5,8 @@ import {
     Divider, Header, Subtitle, LongText
 } from '../../theme';
 import BaseHeader from './BaseHeader.jsx';
-import BaseAbout from './BaseAbout.jsx'
+import BaseAbout from './BaseAbout.jsx';
+import BaseSkills from './BaseSkills.jsx';
 
 class BaseCentre extends React.Component {
     render() {
@@ -15,7 +16,9 @@ class BaseCentre extends React.Component {
                     <BaseAbout />
                 )
             } else if (page === 'skills') {
-                return <button>Skills</button>;
+                return (
+                <BaseSkills />
+                )
             }
         }
 

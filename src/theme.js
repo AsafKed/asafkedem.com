@@ -187,3 +187,21 @@ export const IMG = styled.img`
 export const Clickable = styled.a`
     text-decoration: none;
 `;
+
+/////////////////////////////////////////
+// SKILLS
+/////////////////////////////////////////
+
+export const SkillBG = styled.div`
+    width: 200px;
+    height: 10px;
+    background-color: ${themeSubPages.faded};
+    border-radius: 2px;
+`;
+
+export const SkillFG = styled.div`
+    /* width: calc (${props => props.width} * 200); */
+    height: 10px;
+    background-color: ${themeSubPages.primary};
+    border-radius: 2px;
+`;
