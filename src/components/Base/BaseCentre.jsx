@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import {
     Page, SubPage, Wrapper, SubPageContainer,
     Divider, Header, Subtitle, LongText
