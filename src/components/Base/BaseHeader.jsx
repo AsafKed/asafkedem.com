@@ -3,9 +3,8 @@ import styled from 'styled-components';
 import {
     Page, SubPage, Wrapper, SubPageContainer,
     Divider, Header, Subtitle, Text
-} from '../theme';
-import SkillContainer from './SkillContainer.jsx';
-import me from '../media/me.jpg';
+} from '../../theme';
+// import me from '../../media/me.jpg';
 
 class BaseHeader extends React.Component {
     render() {

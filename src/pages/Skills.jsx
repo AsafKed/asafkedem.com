@@ -1,5 +1,5 @@
 import React from 'react';
-import BaseCentre from '../components/BaseCentre.jsx';
+import BaseCentre from '../components/Base/BaseCentre.jsx';
 
 class Skills extends React.Component {
     render() {
