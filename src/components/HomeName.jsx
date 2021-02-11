@@ -9,7 +9,7 @@ class HomeName extends React.Component {
             <Clickable href="/about">
                 <Container>
                     <Name>Asaf Kedem</Name>
-                    <Subtitle>This is my website!</Subtitle>
+                    <Subtitle>Stubbornly Unconventional.</Subtitle>
                 </Container>
             </Clickable>
         );
