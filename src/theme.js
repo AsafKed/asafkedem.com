@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 export const Page = styled(Wrapper)`
     /* Set background */
     background: ${theme.bg};
-    height: 100vh;
+    height: 100%;
 
     /* Font size (set up for rem usage) so that 1rem = 10px */
     font-size: 62.5%;
@@ -115,7 +115,8 @@ export const SubPage = styled.div`
     background: ${themeSubPages.bg};
     /* display: -webkit-box; */
     width: 67.8%;
-    /* margin-top: 7.5%; */
+    margin-top: 2.5%;
+    margin-bottom: 5%;
     border-radius: 26px;
     padding: 4rem;
     top: -50px;
