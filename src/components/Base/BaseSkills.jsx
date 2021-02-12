@@ -3,7 +3,8 @@ import SkillLevel from './Skills/SkillLevel.jsx';
 import styled from 'styled-components';
 import { themeSubPages as theme } from '../../theme';
 import ReactMarkdown from 'react-markdown';
-import '../../style.css'
+import '../../style.css';
+import SkillsRenderer from './Skills/SkillsRenderer.jsx';
 
 const markdowns = [`
 # Education
@@ -33,13 +34,16 @@ _My leadership ability grew greatly here. We represented and supported internati
 class BaseAbout extends React.Component {
     render() {
         return (
-            <FlexBox>
-                {markdowns.map(markdown => (
-                    <Wrapper>
-                        <ReactMarkdown children={markdown} />
-                    </Wrapper>
-                ))}
-            </FlexBox>
+            <div>
+                <FlexBox>
+                    {markdowns.map(markdown => (
+                        <Wrapper>
+                            <ReactMarkdown children={markdown} />
+                        </Wrapper>
+                    ))}
+                </FlexBox>
+                <SkillsRenderer />
+            </div>
         )
     }
 }
@@ -55,14 +59,13 @@ const FlexBox = styled.div`
     padding-left: 10%;
 `;
 
-// Skills =
-// {
-//     set: "Code",
-//     skills: [
-//         {Java: 0.5,
-//         Python: 0.8,
-//         ReactJS: 0.7}
-//     ]
-        
-    
-// }
+const Skills =
+[
+    {
+        set: "Code",
+        skills: 
+            [{Java: 0.5,
+            Python: 0.8,
+            ReactJS: 0.7}]    
+    }
+]
