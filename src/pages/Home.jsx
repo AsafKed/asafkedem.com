@@ -25,5 +25,5 @@ class Home extends React.Component {
 export default Home;
 
 const AppContainer = styled.div`
-  height: 100%;
+  height: 100vh;
 `;

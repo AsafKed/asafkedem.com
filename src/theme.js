@@ -95,9 +95,9 @@ export const VSelector = styled.a`
     /* Inter-line spacing */
     margin: 0.5rem;
 
-    color: ${theme.faded};
-    &:hover {
     color: ${theme.secondary};
+    &:hover {
+    color: ${themeSubPages.primaryup};
     };
     text-decoration: none;
 `;

@@ -14,7 +14,7 @@ class BaseHeader extends React.Component {
                         
                                 <Header>ASAF KEDEM</Header>
                     
-                                <Subtitle>Software Scientist | Entrepreneur | Student</Subtitle>
+                                <Subtitle>Software Scientist | Entrepreneur | Learner</Subtitle>
                     </Wrapper>
                     <Divider />
                 </div>

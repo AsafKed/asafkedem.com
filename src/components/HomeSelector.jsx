@@ -34,11 +34,11 @@ export default HomeSelector;
 
 const Opened =
     <Container align="right">
-        <VSelector href="projects">Projects</VSelector>
+        {/* <VSelector href="projects">Projects</VSelector> */}
         <VSelector href="skills">Skills</VSelector>
         {/* TODO fix this later, it's very hacky */}
         <VSelector href="">Bring back the man!</VSelector>
-        <VSelector href="blog">Entrepreneurial Blog</VSelector>
+        {/* <VSelector href="blog">Entrepreneurial Blog</VSelector> */}
     </Container>
 
         
