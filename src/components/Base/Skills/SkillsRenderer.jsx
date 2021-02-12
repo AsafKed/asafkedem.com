@@ -32,13 +32,19 @@ class SkillsRenderer extends React.Component {
 export default SkillsRenderer;
 
 const Wrapper = styled.div`
-    width: 50%;
-    padding-right: 10%;
+    /* width: 50%; */
+    /* padding-right: 10%; */
+    flex: 1 0 50%;
+    white-space: nowrap;
+    /* text-align: center; */
+    padding: 10px;
+    box-sizing: border-box;
 `;
 const FlexBox = styled.div`
-    display: flex;
     padding-left: 10%;
-    flex: 0 50%auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 `;
 
 const skills =

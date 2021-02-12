@@ -202,6 +202,6 @@ export const SkillBG = styled.div`
 export const SkillFG = styled.div`
     /* width: calc (${props => props.width} * 200); */
     height: 10px;
-    background-color: ${themeSubPages.primary};
+    background-color: ${themeSubPages.primaryup};
     border-radius: 2px;
 `;
