@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-    Page, SubPage, Wrapper, SubPageContainer,
     Divider, Header, Subtitle, Text
 } from '../../theme';
 // import me from '../../media/me.jpg';
@@ -32,9 +31,6 @@ export default BaseHeader;
 //     align-self: initial;
 // `;
 
-// const Container = styled(Wrapper)`
-//     background-color: red;
-//     height: 50em;
-//     justify-content: flex-start;
-//     align-items: flex-start;
-// `;
+const Wrapper = styled.div`
+    flex-direction: column;
+`;

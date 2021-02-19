@@ -42,7 +42,7 @@ const Wrapper = styled.div`
     box-sizing: border-box;
 `;
 const FlexBox = styled.div`
-    padding-left: 10%;
+    /* padding-left: 10%; */
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;

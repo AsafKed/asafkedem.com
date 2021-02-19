@@ -10,10 +10,12 @@ export const theme = {
 export const themeSubPages = {
     bg: '#21161F',
     header: '#32DE8A',
-    primary: '#A379C9',
-    secondary: '#5DFF11',
+    h1: '#b58e58',
+    h23: '#5DFF11',
     primaryup: '#703EC3',
-    faded: '#C4C4C4'
+    faded: '#C4C4C4',
+    text: '#474747',
+    skill: '#b77f31'
 }
 
 /**
@@ -112,9 +114,9 @@ export const MainSubtitle = styled.h3`
 /* FOR THE SUBPAGES */
 
 export const SubPage = styled.div`
-    background: ${themeSubPages.bg};
+    /* background: ${themeSubPages.bg}; */
     /* display: -webkit-box; */
-    width: 67.8%;
+    width: 80%;
     margin-top: 2.5%;
     margin-bottom: 5%;
     border-radius: 26px;
@@ -140,8 +142,8 @@ export const Divider = styled.div`
 export const Header = styled.h1`
     font-family: Roboto;
     font-size: 4.8rem;
-    color: ${themeSubPages.header};
-    margin-left: 2rem;
+    color: ${themeSubPages.text};
+    /* margin-left: 2rem; */
     margin-top: 0;
     margin-bottom: 0;
     `;
@@ -152,20 +154,20 @@ export const Subtitle = styled.p`
     font-family: Roboto;
     font-style: italic;
     font-size: 2.4rem;
-    color: white;
+    color: ${themeSubPages.text};
     /* margin: 0px; */
 `;
 
 export const SubHeader = styled.h2`
     font-family: Roboto;
     font-size: 3.6rem;
-    color: ${themeSubPages.primary};
+    color: ${themeSubPages.text};
 `;
 
 export const SubsubHeader = styled.h3`
     font-family: Roboto;
     font-size: 2.4rem;
-    color: ${themeSubPages.primary};
+    color: ${themeSubPages.text};
 `;
 
 export const LongText = styled.p`
@@ -203,6 +205,6 @@ export const SkillBG = styled.div`
 export const SkillFG = styled.div`
     /* width: calc (${props => props.width} * 200); */
     height: 10px;
-    background-color: ${themeSubPages.primaryup};
+    background-color: ${themeSubPages.skill};
     border-radius: 2px;
 `;

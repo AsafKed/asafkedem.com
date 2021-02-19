@@ -32,5 +32,6 @@ const Wrapper = styled.div`
 `;
 const FlexBox = styled.div`
     display: flex;
-    padding-left: 10%;
+    /* padding-left: 10%; */
+    justify-content: space-between;
 `;
