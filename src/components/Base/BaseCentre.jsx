@@ -1,11 +1,13 @@
 import React from 'react';
+import styled from 'styled-components';
 import {
-    Page, SubPage, Wrapper, SubPageContainer,
-    Divider, Header, Subtitle, LongText
+    Page, SubPage
 } from '../../theme';
+
 import BaseHeader from './BaseHeader.jsx';
 import BaseAbout from './BaseAbout.jsx';
 import BaseSkills from './BaseSkills.jsx';
+import Menu from '../Menu';
 
 class BaseCentre extends React.Component {
     render() {
@@ -23,10 +25,13 @@ class BaseCentre extends React.Component {
 
         return (<div>
             <Page>
-                <SubPage> 
-                    <BaseHeader />
-                   {renderPage(this.props.page)}
-                </SubPage>
+                <Wrapper>
+                    <Menu />
+                    <SubPage> 
+                        <BaseHeader />
+                    {renderPage(this.props.page)}
+                    </SubPage>
+                </Wrapper>
             </Page>
         </div>
 
@@ -36,3 +41,7 @@ class BaseCentre extends React.Component {
 
 export default BaseCentre;
 
+const Wrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+`;

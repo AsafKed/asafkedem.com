@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Container, VSelector, IMG } from '../theme';
-import man from '../media/man.png';
+import { Container, VSelector, IMG } from '../../theme';
+import man from '../../media/man.png';
 
 class HomeSelector extends React.Component {
     constructor(props) {

@@ -15,6 +15,7 @@ export const themeSubPages = {
     primaryup: '#703EC3',
     faded: '#C4C4C4',
     text: '#474747',
+    text2: '#5d5d5d',
     skill: '#b77f31'
 }
 
@@ -133,7 +134,7 @@ export const SubPageContainer = styled.div`
 export const Divider = styled.div`
     width: 83.5%;
     height: 1px; 
-    background-color: white;
+    background-color: ${themeSubPages.text2};
     margin: 0 auto; /* horizontal centering */
     margin-top: 20px;
     margin-bottom: 20px;

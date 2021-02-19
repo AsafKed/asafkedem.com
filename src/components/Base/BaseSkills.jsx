@@ -1,7 +1,5 @@
 import React from 'react';
-import SkillLevel from './Skills/SkillLevel.jsx';
 import styled from 'styled-components';
-import { themeSubPages as theme } from '../../theme';
 import ReactMarkdown from 'react-markdown';
 import '../../style.css';
 import SkillsRenderer from './Skills/SkillsRenderer.jsx';

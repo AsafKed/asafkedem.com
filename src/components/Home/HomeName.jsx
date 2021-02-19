@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { theme, Clickable, Container, H1, MainSubtitle } from '../theme';
+import { theme, Clickable, Container, H1, MainSubtitle } from '../../theme';
 
 class HomeName extends React.Component {
     render() {

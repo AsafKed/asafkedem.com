@@ -2,8 +2,8 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import { Application, Page, theme } from '../theme'
 
-import HomeName from '../components/HomeName.jsx';
-import HomeSelector from '../components/HomeSelector.jsx';
+import HomeName from '../components/Home/HomeName.jsx';
+import HomeSelector from '../components/Home/HomeSelector.jsx';
 import Footer from '../components/Footer.jsx'
 
 class Home extends React.Component {
